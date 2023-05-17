@@ -129,4 +129,6 @@ df["Difference_per_hour_in_minutes"] = df["Difference_from_defined_Day_in_Minute
 df["Difference_per_minute"] = df["Difference_per_hour_in_minutes"] / 60
 df["Difference_per_second"] = df["Difference_per_minute"] / 60
 
+longest_date = df.sort_values(by=["Rotation_Time"], ascending=False)["Date"][0]
 
+print("The longest date of the year is %s" % longest_date)
