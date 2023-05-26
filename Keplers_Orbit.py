@@ -128,5 +128,5 @@ df["Difference_from_defined_Day_in_Minutes"] = (df["Rotation_Time"] - 86400) / 6
 df["Difference_per_hour_in_minutes"] = df["Difference_from_defined_Day_in_Minutes"] / 24
 df["Difference_per_minute"] = df["Difference_per_hour_in_minutes"] / 60
 df["Difference_per_second"] = df["Difference_per_minute"] / 60
-
+df
 
